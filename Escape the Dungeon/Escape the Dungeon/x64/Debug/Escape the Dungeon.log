@@ -1,0 +1,8 @@
+﻿  Entity.cpp
+  Escape the Dungeon.cpp
+  Game.cpp
+D:\Escape the Dungeon\Escape the Dungeon\Game.cpp(10,27): warning C4305: 'argument' : troncation de 'double' à 'float'
+D:\Escape the Dungeon\Escape the Dungeon\Game.cpp(10,22): warning C4305: 'argument' : troncation de 'double' à 'float'
+  UserInput.cpp
+  Génération de code en cours...
+  Escape the Dungeon.vcxproj -> D:\Escape the Dungeon\x64\Debug\Escape the Dungeon.exe
