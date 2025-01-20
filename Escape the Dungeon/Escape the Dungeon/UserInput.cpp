@@ -17,6 +17,9 @@ void userInput() {
         if (Keyboard::isKeyPressed(Keyboard::Scancode::D)) {
             inputMovement += Vector2f(1, 0.f);
         }
+        if ((inputMovement.x < 0 and player.getSprite()->getScale().x > 0) or (inputMovement.x > 0 and player.getSprite()->getScale().x < 0)) {
+            player.getSprite()->setScale(player.getSprite()->getScale().x * (-1.f), player.getSprite()->getScale().y);
+        }
         player.move();
     }
 }

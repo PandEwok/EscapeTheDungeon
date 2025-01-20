@@ -1,22 +1,22 @@
 #include "Entity.hpp"
 
 
-Entity::Entity(Texture texture) {
-	sprite.setOrigin(Vector2f(texture.getSize()) / 2.f);
+Entity::Entity(Vector2f textureSize) {
+	sprite->setOrigin(textureSize / 2.f);
 }
 
-Sprite* Entity::getSprite() {
-	return &sprite;
+shared_ptr<Sprite> Entity::getSprite() {
+	return sprite;
 }
 
-Player::Player() : Entity(playerTexture) {
-	sprite.setTexture(playerTexture);
-	sprite.setPosition(screenWidth / 2, screenHeight / 2);
-	sprite.setScale(2, 2);
+Player::Player() : Entity(Vector2f(playerTexture.getSize().y, playerTexture.getSize().y)) {
+	sprite->setTexture(playerTexture);
+	sprite->setTextureRect(IntRect(0, 0, playerTexture.getSize().y, playerTexture.getSize().y));
+	sprite->setPosition(screenWidth / 2, screenHeight / 2); 
 }
 
 void Player::draw() {
-	window.draw(sprite);
+	window.draw(*sprite);
 }
 
 float Player::getSpeed() {
@@ -25,6 +25,41 @@ float Player::getSpeed() {
 
 void Player::move()
 {
-	sprite.move(inputMovement * timeSinceLastFrame.asSeconds() * speed);
+	sprite->move(inputMovement * timeSinceLastFrame.asSeconds() * speed);
 }
 
+Clock* Player::getFramerate()
+{
+	return &framrate;
+}
+
+int Player::getHp() {
+	return hp;
+}
+
+void Player::decreaseHp(int value) {
+	hp -= value;
+}
+
+Enemy::Enemy(Texture texture) : Entity(Vector2f(texture.getSize().y, texture.getSize().y)) {}
+
+Clock* Enemy::getFramerate()
+{
+	return &framrate;
+}
+
+void Enemy::draw()
+{
+	window.draw(*sprite);
+}
+
+ChaserEnemy::ChaserEnemy() : Enemy(chaserEnemyTexture) {
+	sprite->setTexture(chaserEnemyTexture);
+	sprite->setTextureRect(IntRect(0, 0, chaserEnemyTexture.getSize().y, chaserEnemyTexture.getSize().y));
+	sprite->setPosition(screenWidth / 2, screenHeight / 2);
+}
+
+void ChaserEnemy::move(Vector2f direction)
+{
+	sprite->move(80.f * direction * timeSinceLastFrame.asSeconds());
+}

@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "D:\\Escape the Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Entity.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Entity.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Escape the Dungeon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Escape the Dungeon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\UserInput.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\UserInput.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\userInput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\userInput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Game.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Game.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Collisions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Collisions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Global.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -37,6 +13,38 @@
     {
       "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Global.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Global.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Entity.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Entity.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Escape the Dungeon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Escape the Dungeon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Collisions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Collisions.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\Game.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\Game.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\userInput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\userInput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|D:\\Escape the Dungeon\\Escape the Dungeon\\UserInput.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{282A55A1-2107-4FEB-90A7-4BC667E3C78E}|Escape the Dungeon\\Escape the Dungeon.vcxproj|solutionrelative:Escape the Dungeon\\UserInput.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,60 +57,90 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Game.cpp",
-              "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Game.cpp",
-              "RelativeDocumentMoniker": "Escape the Dungeon\\Game.cpp",
-              "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Game.cpp",
-              "RelativeToolTip": "Escape the Dungeon\\Game.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-17T10:16:00.566Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Game.hpp",
-              "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Game.hpp",
-              "RelativeDocumentMoniker": "Escape the Dungeon\\Game.hpp",
-              "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Game.hpp",
-              "RelativeToolTip": "Escape the Dungeon\\Game.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Collisions.hpp",
+              "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Collisions.hpp",
+              "RelativeDocumentMoniker": "Escape the Dungeon\\Collisions.hpp",
+              "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Collisions.hpp",
+              "RelativeToolTip": "Escape the Dungeon\\Collisions.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-17T10:15:53.523Z",
+              "WhenOpened": "2025-01-18T16:45:44.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Collisions.cpp",
+              "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Collisions.cpp",
+              "RelativeDocumentMoniker": "Escape the Dungeon\\Collisions.cpp",
+              "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Collisions.cpp",
+              "RelativeToolTip": "Escape the Dungeon\\Collisions.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-18T16:45:33.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Entity.hpp",
               "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Entity.hpp",
               "RelativeDocumentMoniker": "Escape the Dungeon\\Entity.hpp",
               "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Entity.hpp",
               "RelativeToolTip": "Escape the Dungeon\\Entity.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-17T09:35:58.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Entity.cpp",
               "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Entity.cpp",
               "RelativeDocumentMoniker": "Escape the Dungeon\\Entity.cpp",
               "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Entity.cpp",
               "RelativeToolTip": "Escape the Dungeon\\Entity.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwCgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-17T09:35:46.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "Game.hpp",
+              "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Game.hpp",
+              "RelativeDocumentMoniker": "Escape the Dungeon\\Game.hpp",
+              "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Game.hpp",
+              "RelativeToolTip": "Escape the Dungeon\\Game.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-01-17T10:15:53.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Game.cpp",
+              "RelativeDocumentMoniker": "Escape the Dungeon\\Game.cpp",
+              "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Game.cpp",
+              "RelativeToolTip": "Escape the Dungeon\\Game.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAASwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-17T10:16:00.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "UserInput.hpp",
               "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\UserInput.hpp",
               "RelativeDocumentMoniker": "Escape the Dungeon\\UserInput.hpp",
@@ -115,52 +153,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "UserInput.cpp",
               "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\UserInput.cpp",
               "RelativeDocumentMoniker": "Escape the Dungeon\\UserInput.cpp",
               "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\UserInput.cpp",
               "RelativeToolTip": "Escape the Dungeon\\UserInput.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-17T08:37:06.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Global.cpp",
               "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Global.cpp",
               "RelativeDocumentMoniker": "Escape the Dungeon\\Global.cpp",
               "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Global.cpp",
               "RelativeToolTip": "Escape the Dungeon\\Global.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-17T08:29:48.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Global.hpp",
               "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Global.hpp",
               "RelativeDocumentMoniker": "Escape the Dungeon\\Global.hpp",
               "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Global.hpp",
               "RelativeToolTip": "Escape the Dungeon\\Global.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-01-17T08:29:38.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Escape the Dungeon.cpp",
               "DocumentMoniker": "D:\\Escape the Dungeon\\Escape the Dungeon\\Escape the Dungeon.cpp",
               "RelativeDocumentMoniker": "Escape the Dungeon\\Escape the Dungeon.cpp",
               "ToolTip": "D:\\Escape the Dungeon\\Escape the Dungeon\\Escape the Dungeon.cpp",
               "RelativeToolTip": "Escape the Dungeon\\Escape the Dungeon.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAASwEgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-17T08:17:02.818Z",
               "EditorCaption": ""

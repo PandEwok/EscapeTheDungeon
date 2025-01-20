@@ -1,8 +1,60 @@
-﻿  Entity.cpp
+﻿  Collisions.cpp
+  Entity.cpp
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,86): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,86): warning C4244:         with
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,86): warning C4244:         [
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,86): warning C4244:             T=unsigned int
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,86): warning C4244:         ]
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,86): warning C4244:         and
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,86): warning C4244:         [
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,86): warning C4244:             T=float
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,86): warning C4244:         ]
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,59): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,59): warning C4244:         with
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,59): warning C4244:         [
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,59): warning C4244:             T=unsigned int
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,59): warning C4244:         ]
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,59): warning C4244:         and
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,59): warning C4244:         [
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,59): warning C4244:             T=float
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(12,59): warning C4244:         ]
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,87): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,87): warning C4244:         with
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,87): warning C4244:         [
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,87): warning C4244:             T=unsigned int
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,87): warning C4244:         ]
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,87): warning C4244:         and
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,87): warning C4244:         [
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,87): warning C4244:             T=float
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,87): warning C4244:         ]
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,66): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,66): warning C4244:         with
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,66): warning C4244:         [
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,66): warning C4244:             T=unsigned int
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,66): warning C4244:         ]
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,66): warning C4244:         and
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,66): warning C4244:         [
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,66): warning C4244:             T=float
+D:\Escape the Dungeon\Escape the Dungeon\Entity.cpp(44,66): warning C4244:         ]
   Escape the Dungeon.cpp
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(16,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(33,81): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(33,81): warning C4244:         with
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(33,81): warning C4244:         [
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(33,81): warning C4244:             T=unsigned int
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(33,81): warning C4244:         ]
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(33,52): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(33,52): warning C4244:         with
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(33,52): warning C4244:         [
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(33,52): warning C4244:             T=unsigned int
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(33,52): warning C4244:         ]
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(34,24): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(35,24): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
   Game.cpp
-D:\Escape the Dungeon\Escape the Dungeon\Game.cpp(10,27): warning C4305: 'argument' : troncation de 'double' à 'float'
-D:\Escape the Dungeon\Escape the Dungeon\Game.cpp(10,22): warning C4305: 'argument' : troncation de 'double' à 'float'
+  Global.cpp
+D:\Escape the Dungeon\Escape the Dungeon\Global.cpp(11,44): warning C4244: 'argument' : conversion de 'float' en 'unsigned int', perte possible de données
+D:\Escape the Dungeon\Escape the Dungeon\Global.cpp(11,31): warning C4244: 'argument' : conversion de 'float' en 'unsigned int', perte possible de données
+D:\Escape the Dungeon\Escape the Dungeon\Global.cpp(41,39): warning C4018: '>=' : incompatibilité signed/unsigned
   UserInput.cpp
   Génération de code en cours...
   Escape the Dungeon.vcxproj -> D:\Escape the Dungeon\x64\Debug\Escape the Dungeon.exe
