@@ -2,17 +2,19 @@
 
 #include "Global.hpp"
 #include "Entity.hpp"
+#include "Item.hpp"
 
 extern Player player;
 extern Sprite background;
 extern Text scoreText;
-extern shared_ptr<Sprite> hpBar;
 
 extern vector<shared_ptr<Enemy>> enemyList;
+extern vector<shared_ptr<Coin>> coinList;
+extern vector<shared_ptr<PotionHeal>> potionHealList;
 
 class Game {
 protected:
-	Clock coinClock;
+	Clock itemClock;
 	Vector2f scroreTextOffset = Vector2f(35,80);
 public:
 	Game();

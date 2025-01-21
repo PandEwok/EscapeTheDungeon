@@ -15,6 +15,7 @@ Time timeSinceLastFrame;
 
 Texture playerTexture;
 Texture hpBarTexture;
+shared_ptr<Sprite> hpBar = make_shared<Sprite>();
 Vector2f inputMovement = Vector2f(0.f, 0.f);
 int playerScore = 0;
 
@@ -22,9 +23,10 @@ Font mainFont;
 Texture backgroundTexture;
 
 Texture coinTexture;
-vector<shared_ptr<Sprite>> coinList;
+Texture potionHealTexture;
 
 Texture chaserEnemyTexture;
+Texture patrollingEnemyTexture;
 
 void loadTextures() {
     mainFont.loadFromFile("Fonts/Perfect DOS VGA 437 Win.ttf");
@@ -33,7 +35,9 @@ void loadTextures() {
     hpBarTexture.loadFromFile("Images/CrimsonFantasyGUI/AnimationSheets/HealthRegeneration/hpBar.png");
 	backgroundTexture.loadFromFile("Images/map_dungeon.png");
     coinTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_idle.png");
+    potionHealTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/items and trap_animation/flasks/flasks_1_idle.png");
     chaserEnemyTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_idle.png");
+    patrollingEnemyTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skeleton1/v1/skeleton_idle.png");
 }
 
 void continueAnimation(shared_ptr<Sprite> sprite) {
@@ -52,11 +56,17 @@ Vector2f normalize(Vector2f value)
 {
     float baseX = 1.f;
     float baseY = 1.f;
-    if (value.x < 0) {
+    if (int(value.x) < 0) {
         baseX = -1.f;
     }
-    if (value.y < 0) {
+    else if (int(value.x) == 0) {
+        baseX = 0;
+    }
+    if (int(value.y) < 0) {
         baseY = -1.f;
+    }
+    else if (int(value.y) == 0) {
+        baseY = 0;
     }
     if (abs(value.x) > abs(value.y)) {
         return Vector2f(baseX, baseY - baseY * abs(value.y / value.x));

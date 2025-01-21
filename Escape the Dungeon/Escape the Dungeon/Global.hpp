@@ -13,6 +13,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <conio.h>
+#include <chrono>
 
 using namespace std;
 using namespace sf;
@@ -29,6 +30,7 @@ extern Time timeSinceLastFrame;
 
 extern Texture playerTexture;
 extern Texture hpBarTexture;
+extern shared_ptr<Sprite> hpBar;
 extern Vector2f inputMovement;
 extern int playerScore;
 
@@ -36,9 +38,10 @@ extern Font mainFont;
 extern Texture backgroundTexture;
 
 extern Texture coinTexture;
-extern vector<shared_ptr<Sprite>> coinList;
+extern Texture potionHealTexture;
 
 extern Texture chaserEnemyTexture;
+extern Texture patrollingEnemyTexture;
 
 void loadTextures();
 

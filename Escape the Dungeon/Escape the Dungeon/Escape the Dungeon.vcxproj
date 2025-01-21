@@ -138,6 +138,7 @@
     <ClCompile Include="Escape the Dungeon.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Global.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="UserInput.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +146,7 @@
     <ClInclude Include="Entity.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="Global.hpp" />
+    <ClInclude Include="Item.hpp" />
     <ClInclude Include="UserInput.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
