@@ -13,7 +13,7 @@ public:
 
 class Player : public Entity {
 protected:
-	float speed = 4.f;
+	float speed = 300.f;
 	int hp = 3;
 	Clock framrate;
 public:

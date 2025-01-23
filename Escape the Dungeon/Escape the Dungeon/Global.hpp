@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <fstream>
 #include <thread>
 #include <condition_variable>
 #include <mutex>
@@ -27,6 +28,7 @@ extern RenderWindow window;
 extern View mainView;
 extern bool isGameRunning;
 extern Time timeSinceLastFrame;
+extern Time timeSinceLastFrameInputs;
 
 extern Texture playerTexture;
 extern Texture hpBarTexture;
@@ -42,6 +44,11 @@ extern Texture potionHealTexture;
 
 extern Texture chaserEnemyTexture;
 extern Texture patrollingEnemyTexture;
+
+extern Texture wallTileTexture;
+extern Texture wallTileSideTexture;
+extern Texture wallTileBackTexture;
+extern Texture floorTileTexture;
 
 void loadTextures();
 

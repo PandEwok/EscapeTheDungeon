@@ -8,6 +8,7 @@ Text scoreText;
 vector<shared_ptr<Enemy>> enemyList;
 vector<shared_ptr<Coin>> coinList;
 vector<shared_ptr<PotionHeal>> potionHealList;
+vector<shared_ptr<Tile>> tileMap;
 
 Game::Game() {
 	player = Player();

@@ -7,6 +7,7 @@
 #include "Entity.hpp"
 #include "Item.hpp"
 #include "Game.hpp"
+#include "Tile.hpp"
 
 using namespace std;
 using namespace sf;
@@ -52,6 +53,38 @@ int main() {
     window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
 
     loadTextures();
+    fstream map("Images/map1.txt");
+    string line;
+    Vector2f tilePosition = Vector2f(450, 100);
+    while (true) {
+        getline(map, line);
+        if (line == ";") {
+            break;
+        }
+        for (char tileChar : line) {
+            if (tileChar == '0' or tileChar == '8' or tileChar == '9' or tileChar == 'o') {
+                shared_ptr<Wall> newTile = make_shared<Wall>(tilePosition);
+                if (tileChar == '8') {
+                    newTile->getSprite()->setTexture(wallTileSideTexture);
+                }
+                else if (tileChar == '9') {
+                    newTile->getSprite()->setTexture(wallTileSideTexture);
+                    newTile->getSprite()->setScale(-1, 1);
+                }
+                else if (tileChar == 'o') {
+                    newTile->getSprite()->setTexture(wallTileBackTexture);
+                }
+                tileMap.push_back(newTile);
+            }
+            else if (tileChar == '1') {
+                shared_ptr<Floor> newTile = make_shared<Floor>(tilePosition);
+                tileMap.push_back(newTile);
+            }
+            tilePosition.x += 16;
+        }
+        tilePosition.y += 16;
+        tilePosition.x = 450;
+    }
     
     Event event;
     Clock mainClock;
@@ -65,11 +98,23 @@ int main() {
 
     Text gameOver;
     gameOver.setFont(mainFont);
-    gameOver.setString("GAME OVER\n-press escape to close-");
+    string gameOverMessage = "      GAME OVER\n-press escape to close-";
+    gameOver.setString(gameOverMessage);
+    gameOver.setCharacterSize(15);
+    gameOver.setOrigin(Vector2f(90, 20));
     gameOver.setPosition(mainView.getCenter());
 
     while (isGameRunning) {
+        while (window.pollEvent(event)) {
+            if (event.type == Event::KeyPressed and Keyboard::isKeyPressed(Keyboard::Escape)) {
+                cout << "close\n";
+                /*isPauseMenu = true;*/
+                isGameRunning = false;
+            }
+            else if (event.type == Event::Closed) { isGameRunning = false; }
+        }
         if (player.getHp() <= 0) {
+            gameOver.setPosition(mainView.getCenter());
             window.clear();
 
             window.draw(gameOver);
@@ -83,17 +128,12 @@ int main() {
             timeSinceLastFrame = mainClock.restart();
             game.update();
 
-            while (window.pollEvent(event)) {
-                if (event.type == Event::KeyPressed and Keyboard::isKeyPressed(Keyboard::Escape)) {
-                    cout << "close\n";
-                    /*isPauseMenu = true;*/
-                    isGameRunning = false;
-                }
-                else if (event.type == Event::Closed) { isGameRunning = false; }
-            }
             window.clear();
 
-            window.draw(background);
+            for (shared_ptr<Tile> tile : tileMap) {
+                window.draw(*tile->getSprite());
+            }
+
             for (shared_ptr<Coin> coin : coinList) {
                 if (coin) {
                     coin->draw();

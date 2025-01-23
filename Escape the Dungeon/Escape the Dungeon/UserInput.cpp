@@ -3,7 +3,19 @@
 
 
 void userInput() {
+    Clock mainClock;
     while (isGameRunning) {
+        timeSinceLastFrameInputs = mainClock.restart();
+        for (shared_ptr<Tile> tile : tileMap) {
+            if (tile->getSprite()->getGlobalBounds().intersects(player.getSprite()->getGlobalBounds())) {
+                if (tile->getType() == "Wall") {
+                    inputMovement *= -2.f;
+                    player.move();
+                    break;
+                }
+            }
+        }
+
         inputMovement = Vector2f(0, 0.f);
         if (Keyboard::isKeyPressed(Keyboard::Scancode::A)) {
             inputMovement += Vector2f(-1.f, 0.f);

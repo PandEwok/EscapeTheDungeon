@@ -1,12 +1,5 @@
-﻿  Escape the Dungeon.cpp
+﻿  UserInput.cpp
 D:\Escape the Dungeon\Escape the Dungeon\Item.hpp(3,10): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
-  (compiler le fichier source 'Escape%20the%20Dungeon.cpp')
+  (compiler le fichier source 'UserInput.cpp')
   
-D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(21,24): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(22,24): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(29,24): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(30,24): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(36,24): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(37,24): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-D:\Escape the Dungeon\Escape the Dungeon\Escape the Dungeon.cpp(50,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
   Escape the Dungeon.vcxproj -> D:\Escape the Dungeon\x64\Debug\Escape the Dungeon.exe

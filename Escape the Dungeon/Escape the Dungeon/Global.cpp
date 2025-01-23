@@ -12,6 +12,7 @@ RenderWindow window(VideoMode(screenWidth, screenHeight), "Escape The Dungeon", 
 View mainView(FloatRect(screenWidth / 2, screenHeight / 2, 220, 220/4*3));
 bool isGameRunning = true;
 Time timeSinceLastFrame;
+Time timeSinceLastFrameInputs;
 
 Texture playerTexture;
 Texture hpBarTexture;
@@ -28,6 +29,11 @@ Texture potionHealTexture;
 Texture chaserEnemyTexture;
 Texture patrollingEnemyTexture;
 
+Texture wallTileTexture;
+Texture wallTileSideTexture;
+Texture wallTileBackTexture;
+Texture floorTileTexture;
+
 void loadTextures() {
     mainFont.loadFromFile("Fonts/Perfect DOS VGA 437 Win.ttf");
     mainFont.setSmooth(false);
@@ -38,6 +44,10 @@ void loadTextures() {
     potionHealTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/items and trap_animation/flasks/flasks_1_idle.png");
     chaserEnemyTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_idle.png");
     patrollingEnemyTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skeleton1/v1/skeleton_idle.png");
+    wallTileTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile.png");
+    wallTileSideTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile_side.png");
+    wallTileBackTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile_back.png");
+    floorTileTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/floor_tile.png");
 }
 
 void continueAnimation(shared_ptr<Sprite> sprite) {

@@ -12,7 +12,7 @@ shared_ptr<Sprite> Entity::getSprite() {
 Player::Player() : Entity(Vector2f(playerTexture.getSize().y, playerTexture.getSize().y)) {
 	sprite->setTexture(playerTexture);
 	sprite->setTextureRect(IntRect(0, 0, playerTexture.getSize().y, playerTexture.getSize().y));
-	sprite->setPosition(screenWidth / 2, screenHeight / 2); 
+	sprite->setPosition(screenWidth/2, screenHeight/2);
 }
 
 void Player::draw() {
@@ -25,7 +25,7 @@ float Player::getSpeed() {
 
 void Player::move()
 {
-	sprite->move(inputMovement * timeSinceLastFrame.asSeconds() * speed);
+	sprite->move(inputMovement * timeSinceLastFrameInputs.asSeconds() * speed);
 }
 
 Clock* Player::getFramerate()
