@@ -1,7 +1,8 @@
 #include "Collisions.hpp"
 
 vector<shared_ptr<Coin>> toDeleteCoins = {};
-vector<shared_ptr<PotionHeal>> toDeletePotionHeal;
+vector<shared_ptr<PotionHeal>> toDeletePotionHeal = {};
+vector<shared_ptr<Key>> toDeleteKeys = {};
 vector<shared_ptr<Enemy>> toDeleteEnemies = {};
 
 void collisionsProcess() {
@@ -37,11 +38,26 @@ void collisionsProcess() {
 			potionHealList.erase(pos);
 		}
 
+		// keys
+		toDeleteKeys = {};
+		for (shared_ptr<Key> key : keyList) {
+			if (key) {
+				if (key->getSprite()->getGlobalBounds().intersects(player.getSprite()->getGlobalBounds())) {
+					toDeleteKeys.push_back(key);
+					key->interact(player);
+				}
+			}
+		}
+		for (shared_ptr<Key> key : toDeleteKeys) {
+			auto pos = find(keyList.begin(), keyList.end(), key);
+			keyList.erase(pos);
+		}
+
 		// Enemies
 		toDeleteEnemies = {};
 		for (shared_ptr<Enemy> enemy : enemyList) {
 			if (enemy) {
-				if (enemy->getSprite()->getGlobalBounds().intersects(player.getSprite()->getGlobalBounds())) {
+				if (enemy->getSprite()->getGlobalBounds().intersects(player.getHitBox())) {
 					toDeleteEnemies.push_back(enemy);
 					player.decreaseHp();
 					cout << "HP is now " << player.getHp() << redString << " (-1)" << whiteString << endl;

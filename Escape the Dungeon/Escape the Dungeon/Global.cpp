@@ -19,12 +19,15 @@ Texture hpBarTexture;
 shared_ptr<Sprite> hpBar = make_shared<Sprite>();
 Vector2f inputMovement = Vector2f(0.f, 0.f);
 int playerScore = 0;
+Texture playerKeyTexture;
+shared_ptr<Sprite> playerKey = make_shared<Sprite>();
 
 Font mainFont;
 Texture backgroundTexture;
 
 Texture coinTexture;
 Texture potionHealTexture;
+Texture keyTexture;
 
 Texture chaserEnemyTexture;
 Texture patrollingEnemyTexture;
@@ -32,22 +35,44 @@ Texture patrollingEnemyTexture;
 Texture wallTileTexture;
 Texture wallTileSideTexture;
 Texture wallTileBackTexture;
+Texture wallTileBackEndTexture;
+Texture wallTileBackIntersectionTexture;
+Texture wallTileMiddleTexture;
+Texture wallTileMiddleEndTexture;
+Texture wallTileIntersectionTexture;
+Texture wallTileIntersectionSideTexture;
 Texture floorTileTexture;
+Texture doorTileLeftTexture;
+Texture doorTileRightTexture;
+Texture flagTileTexture;
+Texture candleTexture;
 
 void loadTextures() {
     mainFont.loadFromFile("Fonts/Perfect DOS VGA 437 Win.ttf");
     mainFont.setSmooth(false);
 	playerTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/vampire/v1/vampire_idle.png");
     hpBarTexture.loadFromFile("Images/CrimsonFantasyGUI/AnimationSheets/HealthRegeneration/hpBar.png");
+    playerKeyTexture.loadFromFile("Images/Pixel Art Key Pack - Animated/Key 4/GOLD/Key 4 - GOLD - idle.png");
 	backgroundTexture.loadFromFile("Images/map_dungeon.png");
     coinTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/items and trap_animation/coin/coin_idle.png");
     potionHealTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/items and trap_animation/flasks/flasks_1_idle.png");
+    keyTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/items and trap_animation/keys/keys_1_idle.png");
     chaserEnemyTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skull/v1/skull_idle.png");
     patrollingEnemyTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/Character_animation/monsters_idle/skeleton1/v1/skeleton_idle.png");
     wallTileTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile.png");
     wallTileSideTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile_side.png");
     wallTileBackTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile_back.png");
+    wallTileBackEndTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile_back_end.png");
+    wallTileBackIntersectionTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile_back_intersection.png");
+    wallTileMiddleTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile_middle.png");
+    wallTileMiddleEndTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile_middle_end.png");
+    wallTileIntersectionTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile_intersection.png");
+    wallTileIntersectionSideTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/wall_tile_intersection_side.png");
     floorTileTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/floor_tile.png");
+    doorTileLeftTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/door_tile_left.png");
+    doorTileRightTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/character and tileset/door_tile_right.png");
+    flagTileTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/items and trap_animation/flag/flag_idle.png");
+    candleTexture.loadFromFile("Images/2D Pixel Dungeon Asset Pack/items and trap_animation/torch/candlestick_2_idle.png");
 }
 
 void continueAnimation(shared_ptr<Sprite> sprite) {

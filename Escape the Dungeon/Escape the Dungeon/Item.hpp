@@ -21,3 +21,10 @@ public:
 	void interact(Player& player) override;
 	void draw() override;
 };
+
+class Key : public Entity, public Interactable {
+public:
+	Key();
+	void interact(Player& player) override;
+	void draw() override;
+};

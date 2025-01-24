@@ -13,9 +13,10 @@ public:
 
 class Player : public Entity {
 protected:
-	float speed = 300.f;
+	float speed = 250.f;
 	int hp = 3;
 	Clock framrate;
+	int keyNumber = 0;
 public:
 	Player();
 	void draw() override;
@@ -25,6 +26,9 @@ public:
 	int getHp();
 	void decreaseHp(int value = 1);
 	void increaseHp(int value = 1);
+	int getKeyState();
+	void setKeyState(int newValue);
+	FloatRect getHitBox();
 };
 
 class Enemy : public Entity {
@@ -47,7 +51,8 @@ class PatrollingEnemy : public Enemy {
 protected:
 	vector<Vector2f> path;
 	int currentPoint = 0;
+	int previousPoint = 0;
 public:
-	PatrollingEnemy(vector<Vector2f> _path = {mainView.getCenter() + Vector2f(-40, -20), mainView.getCenter() + Vector2f(40, -20) });
+	PatrollingEnemy(vector<Vector2f> _path);
 	Vector2f move(Vector2f direction = Vector2f(0,0)) override;
 };

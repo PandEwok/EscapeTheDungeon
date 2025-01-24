@@ -21,3 +21,18 @@ class Floor : public Tile {
 public:
 	Floor(Vector2f position);
 };
+
+class Door : public Tile {
+public:
+	Door(Vector2f position);
+};
+
+class Flag : public Tile {
+public:
+	Flag(Vector2f position);
+};
+
+class Candle : public Tile {
+public:
+	Candle(Vector2f position);
+};

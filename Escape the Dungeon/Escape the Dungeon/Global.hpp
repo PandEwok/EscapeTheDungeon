@@ -35,12 +35,15 @@ extern Texture hpBarTexture;
 extern shared_ptr<Sprite> hpBar;
 extern Vector2f inputMovement;
 extern int playerScore;
+extern Texture playerKeyTexture;
+extern shared_ptr<Sprite> playerKey;
 
 extern Font mainFont;
 extern Texture backgroundTexture;
 
 extern Texture coinTexture;
 extern Texture potionHealTexture;
+extern Texture keyTexture;
 
 extern Texture chaserEnemyTexture;
 extern Texture patrollingEnemyTexture;
@@ -48,7 +51,17 @@ extern Texture patrollingEnemyTexture;
 extern Texture wallTileTexture;
 extern Texture wallTileSideTexture;
 extern Texture wallTileBackTexture;
+extern Texture wallTileBackEndTexture;
+extern Texture wallTileBackIntersectionTexture;
+extern Texture wallTileMiddleTexture;
+extern Texture wallTileMiddleEndTexture;
+extern Texture wallTileIntersectionTexture;
+extern Texture wallTileIntersectionSideTexture;
 extern Texture floorTileTexture;
+extern Texture doorTileLeftTexture;
+extern Texture doorTileRightTexture;
+extern Texture flagTileTexture;
+extern Texture candleTexture;
 
 void loadTextures();
 

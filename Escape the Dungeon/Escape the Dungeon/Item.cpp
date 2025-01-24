@@ -30,3 +30,19 @@ void PotionHeal::draw()
 {
 	window.draw(*sprite);
 }
+
+Key::Key() : Entity(Vector2f(keyTexture.getSize().y, keyTexture.getSize().y))
+{
+	sprite->setTexture(keyTexture);
+	sprite->setTextureRect(IntRect(0, 0, keyTexture.getSize().y, keyTexture.getSize().y));
+}
+
+void Key::interact(Player& player)
+{
+	player.setKeyState(player.getKeyState()+1);
+}
+
+void Key::draw()
+{
+	window.draw(*sprite);
+}

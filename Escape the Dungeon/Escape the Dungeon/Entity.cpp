@@ -12,7 +12,7 @@ shared_ptr<Sprite> Entity::getSprite() {
 Player::Player() : Entity(Vector2f(playerTexture.getSize().y, playerTexture.getSize().y)) {
 	sprite->setTexture(playerTexture);
 	sprite->setTextureRect(IntRect(0, 0, playerTexture.getSize().y, playerTexture.getSize().y));
-	sprite->setPosition(screenWidth/2, screenHeight/2);
+	sprite->setPosition(10,10);
 }
 
 void Player::draw() {
@@ -53,6 +53,22 @@ void Player::increaseHp(int value)
 	}
 }
 
+int Player::getKeyState()
+{
+	return keyNumber;
+}
+
+void Player::setKeyState(int newValue)
+{
+	keyNumber = newValue;
+}
+
+FloatRect Player::getHitBox() {
+	Vector2f boundsPos = sprite->getGlobalBounds().getPosition();
+	Vector2f boundsSize = sprite->getGlobalBounds().getSize();
+	return FloatRect(boundsPos.x + boundsSize.x/3.f, boundsPos.y + boundsSize.y/3.f, boundsSize.x/3.f, boundsSize.y/3.f*2);
+}
+
 Enemy::Enemy(Texture texture) : Entity(Vector2f(texture.getSize().y, texture.getSize().y)) {}
 
 Clock* Enemy::getFramerate()
@@ -86,15 +102,17 @@ PatrollingEnemy::PatrollingEnemy(vector<Vector2f> _path) : Enemy(patrollingEnemy
 Vector2f PatrollingEnemy::move(Vector2f direction)
 {
 	int nextPoint;
-	if (currentPoint == path.size() - 1) {
-		nextPoint = 0;
+	if ((currentPoint == path.size() - 1 or currentPoint < previousPoint) and currentPoint != 0) {
+		nextPoint = currentPoint-1;
 	}
 	else {
 		nextPoint = currentPoint + 1;
 	}
 	direction = normalize(path[nextPoint] - sprite->getPosition());
 	sprite->move(65.f * direction * timeSinceLastFrame.asSeconds());
-	if (int(sprite->getPosition().x) == int(path[nextPoint].x - 1) or int(sprite->getPosition().x) == int(path[nextPoint].x + 1)) {
+	if ((int(sprite->getPosition().x) >= int(path[nextPoint].x - 1) and int(sprite->getPosition().x) <= int(path[nextPoint].x + 1)) and
+		(int(sprite->getPosition().y) >= int(path[nextPoint].y - 1) and int(sprite->getPosition().y) <= int(path[nextPoint].y + 1))) {
+		previousPoint = currentPoint;
 		currentPoint = nextPoint;
 	}
 	return direction;
